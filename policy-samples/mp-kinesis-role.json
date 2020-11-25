@@ -1,0 +1,14 @@
+{
+   "Version": "2012-10-17",
+   "Statement": [
+       {
+           "Effect": "Allow",
+           "Action": [
+               "kinesis:PutRecord"
+           ],
+           "Resource": [
+               "arn:aws:kinesis:us-east-1:521255666488:stream/Items4UCommerceEventStream"
+           ]
+       }
+   ]
+}

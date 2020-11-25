@@ -1,0 +1,21 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": [
+          "arn:aws:iam::338661164609:role/role-lambda-verifyrequest",
+          "arn:aws:iam::338661164609:role/role-ecs-mp-notification-httpservertoserverprocessor"
+        ]
+      },
+      "Action": "sts:AssumeRole",
+      "Condition": {
+        "StringEquals": {
+          "sts:ExternalId": "orgid:1565"
+        }
+      }
+    }
+  ]
+}
